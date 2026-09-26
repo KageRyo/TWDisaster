@@ -6,8 +6,6 @@ The initial release provides a curated set of source-supported historical disast
 
 The dataset reflects the coverage and granularity of the included source material and is intended as a reusable historical record rather than an exhaustive catalogue of disaster events or response activities.
 
-Dataset changes are validated in CI with [ReleaseGuard](https://github.com/KageRyo/ReleaseGuard); it is development tooling only and is not required to use the dataset.
-
 ## Files
 
 | Path | Contents |

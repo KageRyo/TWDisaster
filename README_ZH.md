@@ -6,8 +6,6 @@
 
 資料集的涵蓋範圍與細節取決於所收錄來源提供的內容，適合作為可再利用的歷史紀錄；不應視為所有災害事件或應變活動的完整目錄。
 
-資料集變更會由 CI 使用 [ReleaseGuard](https://github.com/KageRyo/ReleaseGuard) 驗證；ReleaseGuard 僅供開發流程使用，使用資料集不需要安裝它。
-
 ## 檔案
 
 | 路徑 | 內容 |
