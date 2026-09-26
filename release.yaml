@@ -1,0 +1,96 @@
+release:
+  name: twdisaster
+  version: 0.1.1
+
+files:
+  events:
+    path: data/events.csv
+    format: csv
+    schema:
+      event_id: { type: string, nullable: false }
+      name: { type: string, nullable: false }
+      aliases_json: { type: string, nullable: false }
+      event_type: { type: string, nullable: false }
+      start_date: { type: string, nullable: true }
+      end_date: { type: string, nullable: true }
+      time_precision: { type: string, nullable: false }
+      reported_areas_json: { type: string, nullable: false }
+
+  observations:
+    path: data/observations.csv
+    format: csv
+    schema:
+      observation_id: { type: string, nullable: false }
+      event_id: { type: string, nullable: false }
+      source_id: { type: string, nullable: false }
+      category: { type: string, nullable: false }
+      observation_type: { type: string, nullable: false }
+      state: { type: string, nullable: false }
+      observed_at: { type: string, nullable: true }
+      observed_at_precision: { type: string, nullable: false }
+      action_at: { type: string, nullable: true }
+      action_at_precision: { type: string, nullable: false }
+      reported_at: { type: string, nullable: true }
+      reported_at_precision: { type: string, nullable: false }
+      published_at: { type: string, nullable: true }
+      published_at_precision: { type: string, nullable: false }
+      available_at: { type: string, nullable: true }
+      available_at_precision: { type: string, nullable: false }
+      area_name: { type: string, nullable: true }
+      spatial_precision: { type: string, nullable: false }
+      responsible_agency: { type: string, nullable: true }
+      attributes_json: { type: string, nullable: false }
+      source_locator: { type: string, nullable: false }
+      source_version: { type: string, nullable: false }
+      source_record_sha256: { type: string, nullable: true }
+
+  sources:
+    path: data/sources.csv
+    format: csv
+    schema:
+      source_id: { type: string, nullable: false }
+      publisher: { type: string, nullable: false }
+      title: { type: string, nullable: false }
+      source_type: { type: string, nullable: false }
+      url: { type: string, nullable: false }
+      retrieved_at: { type: string, nullable: false }
+      versions_json: { type: string, nullable: false }
+      snapshot_sha256: { type: string, nullable: true }
+      rights_status: { type: string, nullable: false }
+      rights_basis_url: { type: string, nullable: false }
+      rights_note: { type: string, nullable: false }
+
+  event_sources:
+    path: data/event_sources.csv
+    format: csv
+    schema:
+      event_id: { type: string, nullable: false }
+      source_id: { type: string, nullable: false }
+      relationship: { type: string, nullable: false }
+
+checks:
+  - id: event-id-unique
+    type: unique
+    field: events.event_id
+  - id: observation-id-unique
+    type: unique
+    field: observations.observation_id
+  - id: source-id-unique
+    type: unique
+    field: sources.source_id
+  - id: observation-event-reference
+    type: foreign_key
+    from: observations.event_id
+    to: events.event_id
+  - id: observation-source-reference
+    type: foreign_key
+    from: observations.source_id
+    to: sources.source_id
+  - id: event-source-event-reference
+    type: foreign_key
+    from: event_sources.event_id
+    to: events.event_id
+  - id: event-source-source-reference
+    type: foreign_key
+    from: event_sources.source_id
+    to: sources.source_id
