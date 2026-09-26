@@ -1,6 +1,6 @@
 # Sources and rights review
 
-Version 0.1.0 includes 88 physical source records from four publisher website families. Each source has an original URL and a linked official reuse declaration in `data/sources.csv`. The source rows require attribution to the original publisher. The declarations concern material on the relevant official sites and include exceptions; TWDisaster publishes normalized non-personal facts only.
+Version 0.1.1 includes 88 physical source records from four publisher website families. Each source has an original URL and a linked official reuse declaration in `data/sources.csv`. The source rows require attribution to the original publisher. The declarations concern material on the relevant official sites and include exceptions; TWDisaster publishes normalized non-personal facts only.
 
 | Website family | Sources | Observations | Rights basis |
 | --- | ---: | ---: | --- |

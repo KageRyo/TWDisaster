@@ -1,6 +1,6 @@
 # TWDisaster
 
-TWDisaster is a standalone, UTF-8 CSV dataset of historical weather-related disaster events and source-supported response observations in Taiwan. Version 0.1.0 contains **76 events, 395 observations, 88 sources, and 89 event-source links** covering source-reported windows from 2001-06-22 to 2025-08-11. It can be opened in a spreadsheet or imported into any tool that reads CSV; no project software is needed.
+TWDisaster is a standalone, UTF-8 CSV dataset of historical weather-related disaster events and source-supported response observations in Taiwan. Version 0.1.1 contains **76 events, 395 observations, 88 sources, and 89 event-source links** covering source-reported windows from 2001-06-22 to 2025-08-11. It can be opened in a spreadsheet or imported into any tool that reads CSV; no project software is needed.
 
 The initial release is a curated, positive-only collection of response facts from official public sources. It is **not** a complete inventory of Taiwan disasters or response actions. A missing observation means no included source-supported row, not that an action did not occur. The dataset contains no forecasts, recommendations, priorities, candidate rankings, training labels, or 20 m grid assignments.
 

@@ -1,6 +1,6 @@
 # Curation methodology
 
-Version 0.1.0 organizes normalized historical evidence and source metadata into four standalone tables. The release includes no application code, database schema, pipeline, or rebuild dependency. Future maintenance can edit the CSV and schema files directly after checking the original public sources.
+Version 0.1.1 organizes normalized historical evidence and source metadata into four standalone tables. The release includes no application code, database schema, pipeline, or rebuild dependency. Future maintenance can edit the CSV and schema files directly after checking the original public sources.
 
 The input review covered 122 event records, evidence records, event/source relationships, and source provenance metadata. The action evidence contained 476 unique factual records and 619 rows across crosswalk relationships, where one action could appear more than once. The release selected the 395 unique action records whose source URL is on an official website with a reviewed reuse declaration, whose curation flag says no personal information, and whose source title, publisher, retrieval time, and original URL are available. It did not copy source wording or original documents. The selected records cover 76 events.
 
