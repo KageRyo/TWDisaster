@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite TWDisaster and the original publisher for specific observations."
+title: "TWDisaster: Taiwan Historical Disaster Dataset"
+version: 0.1.0
+date-released: 2026-09-26
+authors:
+  - family-names: Chang
+    given-names: Chien-Hsun
+url: https://github.com/KageRyo/TWDisaster
+repository-code: https://github.com/KageRyo/TWDisaster
+keywords:
+  - Taiwan
+  - disaster
+  - historical events
+  - response actions

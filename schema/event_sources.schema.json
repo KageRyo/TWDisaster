@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/KageRyo/TWDisaster/blob/main/schema/event_sources.schema.json",
+  "title": "TWDisaster event_sources.csv row",
+  "description": "Apply to a CSV row after reading every cell as UTF-8 text. Empty cells represent unknown or unavailable values unless the field description says otherwise.",
+  "type": "object",
+  "required": [
+    "event_id",
+    "source_id",
+    "relationship"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^TWD-E[0-9]{4}$",
+      "description": "Foreign key to events.event_id."
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^TWD-S[0-9]{4}$",
+      "description": "Foreign key to sources.source_id."
+    },
+    "relationship": {
+      "type": "string",
+      "enum": [
+        "supports_observation"
+      ],
+      "description": "Relationship between event and source."
+    }
+  },
+  "additionalProperties": false,
+  "x-csv-column-order": [
+    "event_id",
+    "source_id",
+    "relationship"
+  ],
+  "x-csv-primary-key": [
+    "event_id",
+    "source_id"
+  ],
+  "x-csv-foreign-keys": {
+    "event_id": "events.event_id",
+    "source_id": "sources.source_id"
+  }
+}

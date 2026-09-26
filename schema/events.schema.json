@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/KageRyo/TWDisaster/blob/main/schema/events.schema.json",
+  "title": "TWDisaster events.csv row",
+  "description": "Apply to a CSV row after reading every cell as UTF-8 text. Empty cells represent unknown or unavailable values unless the field description says otherwise.",
+  "type": "object",
+  "required": [
+    "event_id",
+    "name",
+    "aliases_json",
+    "event_type",
+    "start_date",
+    "end_date",
+    "time_precision",
+    "reported_areas_json"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^TWD-E[0-9]{4}$",
+      "description": "Immutable dataset event ID."
+    },
+    "name": {
+      "type": "string",
+      "description": "Source-supported event name."
+    },
+    "aliases_json": {
+      "type": "string",
+      "contentMediaType": "application/json",
+      "contentSchema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "description": "JSON array of distinct historical aliases; [] means none recorded."
+    },
+    "event_type": {
+      "type": "string",
+      "description": "Reported disaster type, such as typhoon or heavy_rain."
+    },
+    "start_date": {
+      "type": "string",
+      "pattern": "^(|[0-9]{4}-[0-9]{2}-[0-9]{2})$",
+      "description": "Earliest start date among included source report windows; empty when unknown."
+    },
+    "end_date": {
+      "type": "string",
+      "pattern": "^(|[0-9]{4}-[0-9]{2}-[0-9]{2})$",
+      "description": "Latest end date among included source report windows; empty when unknown."
+    },
+    "time_precision": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "day",
+        "day_range"
+      ],
+      "description": "Precision of the compiled report window."
+    },
+    "reported_areas_json": {
+      "type": "string",
+      "contentMediaType": "application/json",
+      "contentSchema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "description": "JSON array of administrative areas mentioned by included observations, not an event footprint."
+    }
+  },
+  "additionalProperties": false,
+  "x-csv-column-order": [
+    "event_id",
+    "name",
+    "aliases_json",
+    "event_type",
+    "start_date",
+    "end_date",
+    "time_precision",
+    "reported_areas_json"
+  ],
+  "x-csv-primary-key": [
+    "event_id"
+  ],
+  "x-csv-foreign-keys": {}
+}

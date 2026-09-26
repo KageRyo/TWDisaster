@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/KageRyo/TWDisaster/blob/main/schema/observations.schema.json",
+  "title": "TWDisaster observations.csv row",
+  "description": "Apply to a CSV row after reading every cell as UTF-8 text. Empty cells represent unknown or unavailable values unless the field description says otherwise.",
+  "type": "object",
+  "required": [
+    "observation_id",
+    "event_id",
+    "source_id",
+    "category",
+    "observation_type",
+    "state",
+    "observed_at",
+    "observed_at_precision",
+    "action_at",
+    "action_at_precision",
+    "reported_at",
+    "reported_at_precision",
+    "published_at",
+    "published_at_precision",
+    "available_at",
+    "available_at_precision",
+    "area_name",
+    "spatial_precision",
+    "responsible_agency",
+    "attributes_json",
+    "source_locator",
+    "source_version",
+    "source_record_sha256"
+  ],
+  "properties": {
+    "observation_id": {
+      "type": "string",
+      "pattern": "^TWD-O[0-9]{5}$",
+      "description": "Immutable dataset observation ID."
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^TWD-E[0-9]{4}$",
+      "description": "Foreign key to events.event_id."
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^TWD-S[0-9]{4}$",
+      "description": "Foreign key to sources.source_id."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "response_action"
+      ],
+      "description": "Factual observation category."
+    },
+    "observation_type": {
+      "type": "string",
+      "description": "Source-supported action type."
+    },
+    "state": {
+      "type": "string",
+      "description": "Source-supported reported action state; planned or ordered is not completed."
+    },
+    "observed_at": {
+      "type": "string",
+      "description": "Time represented by the observation."
+    },
+    "observed_at_precision": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "day",
+        "date",
+        "day_range",
+        "hour",
+        "minute"
+      ],
+      "description": "Precision of observed_at."
+    },
+    "action_at": {
+      "type": "string",
+      "description": "Time the action happened, if source-supported."
+    },
+    "action_at_precision": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "day",
+        "date",
+        "day_range",
+        "hour",
+        "minute"
+      ],
+      "description": "Precision of action_at."
+    },
+    "reported_at": {
+      "type": "string",
+      "description": "Report time, if source-supported."
+    },
+    "reported_at_precision": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "day",
+        "date",
+        "day_range",
+        "hour",
+        "minute"
+      ],
+      "description": "Precision of reported_at."
+    },
+    "published_at": {
+      "type": "string",
+      "description": "Publication time, if source-supported."
+    },
+    "published_at_precision": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "day",
+        "date",
+        "day_range",
+        "hour",
+        "minute"
+      ],
+      "description": "Precision of published_at."
+    },
+    "available_at": {
+      "type": "string",
+      "description": "Information availability time, if separately supported."
+    },
+    "available_at_precision": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "day",
+        "date",
+        "day_range",
+        "hour",
+        "minute"
+      ],
+      "description": "Precision of available_at."
+    },
+    "area_name": {
+      "type": "string",
+      "description": "Source-listed location or area; empty when unsupported."
+    },
+    "spatial_precision": {
+      "type": "string",
+      "enum": [
+        "event",
+        "county",
+        "township",
+        "village",
+        "road_segment",
+        "unknown"
+      ],
+      "description": "Native spatial support of the observation."
+    },
+    "responsible_agency": {
+      "type": "string",
+      "description": "Agency named in the source, if any."
+    },
+    "attributes_json": {
+      "type": "string",
+      "contentMediaType": "application/json",
+      "contentSchema": {
+        "type": "object"
+      },
+      "description": "JSON object of source-supported counts, units, qualifiers, and other factual attributes."
+    },
+    "source_locator": {
+      "type": "string",
+      "description": "Page, section, or record location within the source."
+    },
+    "source_version": {
+      "type": "string",
+      "description": "Version of the source record used for this observation."
+    },
+    "source_record_sha256": {
+      "type": "string",
+      "pattern": "^(|[a-f0-9]{64})$",
+      "description": "Hash of the normalized upstream observation record; does not replace the source snapshot hash."
+    }
+  },
+  "additionalProperties": false,
+  "x-csv-column-order": [
+    "observation_id",
+    "event_id",
+    "source_id",
+    "category",
+    "observation_type",
+    "state",
+    "observed_at",
+    "observed_at_precision",
+    "action_at",
+    "action_at_precision",
+    "reported_at",
+    "reported_at_precision",
+    "published_at",
+    "published_at_precision",
+    "available_at",
+    "available_at_precision",
+    "area_name",
+    "spatial_precision",
+    "responsible_agency",
+    "attributes_json",
+    "source_locator",
+    "source_version",
+    "source_record_sha256"
+  ],
+  "x-csv-primary-key": [
+    "observation_id"
+  ],
+  "x-csv-foreign-keys": {
+    "event_id": "events.event_id",
+    "source_id": "sources.source_id"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/KageRyo/TWDisaster/blob/main/schema/sources.schema.json",
+  "title": "TWDisaster sources.csv row",
+  "description": "Apply to a CSV row after reading every cell as UTF-8 text. Empty cells represent unknown or unavailable values unless the field description says otherwise.",
+  "type": "object",
+  "required": [
+    "source_id",
+    "publisher",
+    "title",
+    "source_type",
+    "url",
+    "retrieved_at",
+    "versions_json",
+    "snapshot_sha256",
+    "rights_status",
+    "rights_basis_url",
+    "rights_note"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^TWD-S[0-9]{4}$",
+      "description": "Immutable physical source snapshot ID."
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Publisher identified by source metadata."
+    },
+    "title": {
+      "type": "string",
+      "description": "Source title identified by source metadata."
+    },
+    "source_type": {
+      "type": "string",
+      "description": "Document or web page classification."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Original public URL; links may change."
+    },
+    "retrieved_at": {
+      "type": "string",
+      "description": "Earliest documented retrieval of this exact source snapshot."
+    },
+    "versions_json": {
+      "type": "string",
+      "contentMediaType": "application/json",
+      "contentSchema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "description": "JSON array of upstream version labels associated with the same URL and snapshot hash."
+    },
+    "snapshot_sha256": {
+      "type": "string",
+      "pattern": "^(|[a-f0-9]{64})$",
+      "description": "SHA-256 of archived source bytes where available; empty means no verified snapshot hash."
+    },
+    "rights_status": {
+      "type": "string",
+      "enum": [
+        "website_open_statement"
+      ],
+      "description": "Basis for including normalized factual records."
+    },
+    "rights_basis_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Official website data reuse declaration."
+    },
+    "rights_note": {
+      "type": "string",
+      "description": "Limits and attribution reminder."
+    }
+  },
+  "additionalProperties": false,
+  "x-csv-column-order": [
+    "source_id",
+    "publisher",
+    "title",
+    "source_type",
+    "url",
+    "retrieved_at",
+    "versions_json",
+    "snapshot_sha256",
+    "rights_status",
+    "rights_basis_url",
+    "rights_note"
+  ],
+  "x-csv-primary-key": [
+    "source_id"
+  ],
+  "x-csv-foreign-keys": {}
+}
