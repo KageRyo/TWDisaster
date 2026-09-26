@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/KageRyo/TWDisaster/blob/main/schema/observations.schema.json",
   "title": "TWDisaster observations.csv row",
-  "description": "Apply to a CSV row after reading every cell as UTF-8 text. Empty cells represent unknown or unavailable values unless the field description says otherwise.",
+  "description": "Apply to a CSV row after reading every cell as UTF-8 text. Empty cells represent unknown or unavailable values unless the field description says otherwise. Time values must match their precision: unknown pairs with an empty value; day/date uses YYYY-MM-DD; hour and minute use ISO 8601 timestamps at that granularity; day_range is non-empty.",
   "type": "object",
   "required": [
     "observation_id",
@@ -29,6 +29,27 @@
     "source_version",
     "source_record_sha256"
   ],
+  "$defs": {
+    "calendarDay": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "hourTime": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T(?:[01][0-9]|2[0-3]):00:00(?:Z|[+-](?:[01][0-9]|2[0-3]):[0-5][0-9])$"
+    },
+    "minuteTime": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T(?:[01][0-9]|2[0-3]):[0-5][0-9]:00(?:Z|[+-](?:[01][0-9]|2[0-3]):[0-5][0-9])$"
+    },
+    "nonEmptyTimeRange": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
   "properties": {
     "observation_id": {
       "type": "string",
@@ -182,6 +203,108 @@
       "description": "Hash of the normalized upstream observation record; does not replace the source snapshot hash."
     }
   },
+  "allOf": [
+    {
+      "if": {"properties": {"observed_at_precision": {"const": "unknown"}}},
+      "then": {"properties": {"observed_at": {"const": ""}}}
+    },
+    {
+      "if": {"properties": {"observed_at_precision": {"enum": ["day", "date"]}}},
+      "then": {"properties": {"observed_at": {"$ref": "#/$defs/calendarDay"}}}
+    },
+    {
+      "if": {"properties": {"observed_at_precision": {"const": "hour"}}},
+      "then": {"properties": {"observed_at": {"$ref": "#/$defs/hourTime"}}}
+    },
+    {
+      "if": {"properties": {"observed_at_precision": {"const": "minute"}}},
+      "then": {"properties": {"observed_at": {"$ref": "#/$defs/minuteTime"}}}
+    },
+    {
+      "if": {"properties": {"observed_at_precision": {"const": "day_range"}}},
+      "then": {"properties": {"observed_at": {"$ref": "#/$defs/nonEmptyTimeRange"}}}
+    },
+    {
+      "if": {"properties": {"action_at_precision": {"const": "unknown"}}},
+      "then": {"properties": {"action_at": {"const": ""}}}
+    },
+    {
+      "if": {"properties": {"action_at_precision": {"enum": ["day", "date"]}}},
+      "then": {"properties": {"action_at": {"$ref": "#/$defs/calendarDay"}}}
+    },
+    {
+      "if": {"properties": {"action_at_precision": {"const": "hour"}}},
+      "then": {"properties": {"action_at": {"$ref": "#/$defs/hourTime"}}}
+    },
+    {
+      "if": {"properties": {"action_at_precision": {"const": "minute"}}},
+      "then": {"properties": {"action_at": {"$ref": "#/$defs/minuteTime"}}}
+    },
+    {
+      "if": {"properties": {"action_at_precision": {"const": "day_range"}}},
+      "then": {"properties": {"action_at": {"$ref": "#/$defs/nonEmptyTimeRange"}}}
+    },
+    {
+      "if": {"properties": {"reported_at_precision": {"const": "unknown"}}},
+      "then": {"properties": {"reported_at": {"const": ""}}}
+    },
+    {
+      "if": {"properties": {"reported_at_precision": {"enum": ["day", "date"]}}},
+      "then": {"properties": {"reported_at": {"$ref": "#/$defs/calendarDay"}}}
+    },
+    {
+      "if": {"properties": {"reported_at_precision": {"const": "hour"}}},
+      "then": {"properties": {"reported_at": {"$ref": "#/$defs/hourTime"}}}
+    },
+    {
+      "if": {"properties": {"reported_at_precision": {"const": "minute"}}},
+      "then": {"properties": {"reported_at": {"$ref": "#/$defs/minuteTime"}}}
+    },
+    {
+      "if": {"properties": {"reported_at_precision": {"const": "day_range"}}},
+      "then": {"properties": {"reported_at": {"$ref": "#/$defs/nonEmptyTimeRange"}}}
+    },
+    {
+      "if": {"properties": {"published_at_precision": {"const": "unknown"}}},
+      "then": {"properties": {"published_at": {"const": ""}}}
+    },
+    {
+      "if": {"properties": {"published_at_precision": {"enum": ["day", "date"]}}},
+      "then": {"properties": {"published_at": {"$ref": "#/$defs/calendarDay"}}}
+    },
+    {
+      "if": {"properties": {"published_at_precision": {"const": "hour"}}},
+      "then": {"properties": {"published_at": {"$ref": "#/$defs/hourTime"}}}
+    },
+    {
+      "if": {"properties": {"published_at_precision": {"const": "minute"}}},
+      "then": {"properties": {"published_at": {"$ref": "#/$defs/minuteTime"}}}
+    },
+    {
+      "if": {"properties": {"published_at_precision": {"const": "day_range"}}},
+      "then": {"properties": {"published_at": {"$ref": "#/$defs/nonEmptyTimeRange"}}}
+    },
+    {
+      "if": {"properties": {"available_at_precision": {"const": "unknown"}}},
+      "then": {"properties": {"available_at": {"const": ""}}}
+    },
+    {
+      "if": {"properties": {"available_at_precision": {"enum": ["day", "date"]}}},
+      "then": {"properties": {"available_at": {"$ref": "#/$defs/calendarDay"}}}
+    },
+    {
+      "if": {"properties": {"available_at_precision": {"const": "hour"}}},
+      "then": {"properties": {"available_at": {"$ref": "#/$defs/hourTime"}}}
+    },
+    {
+      "if": {"properties": {"available_at_precision": {"const": "minute"}}},
+      "then": {"properties": {"available_at": {"$ref": "#/$defs/minuteTime"}}}
+    },
+    {
+      "if": {"properties": {"available_at_precision": {"const": "day_range"}}},
+      "then": {"properties": {"available_at": {"$ref": "#/$defs/nonEmptyTimeRange"}}}
+    }
+  ],
   "additionalProperties": false,
   "x-csv-column-order": [
     "observation_id",
