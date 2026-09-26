@@ -1,6 +1,6 @@
 {
   "manifest_version": "1.0.0",
-  "dataset_version": "0.1.1",
+  "dataset_version": "0.1.2",
   "schema_version": "1.0.1",
   "hash_algorithm": "SHA-256",
   "hash_scope": "exact UTF-8 file bytes",
@@ -51,8 +51,8 @@
     },
     {
       "path": "metadata/dataset.json",
-      "sha256": "d5323c4a14afbc39101f50c5ecedeb3ff1fbbba60b77b6d5d2573047390174e1",
-      "bytes": 1424
+      "sha256": "0ae67c577348e2cdbbb576191f01d997b031d91e7f21a3ebf2551f2b07223348",
+      "bytes": 1453
     }
   ],
   "notes": "The manifest and checksum file are not self-hashed. Source snapshot hashes in sources.csv describe upstream captures, not these canonical files."

@@ -32,6 +32,6 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Validate dataset
-        uses: KageRyo/ReleaseGuard@v0.2.0
+        uses: KageRyo/ReleaseGuard@v0.2.1
         with:
           path: .

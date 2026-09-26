@@ -17,7 +17,7 @@
   },
   "last_dataset_update": "2026-09-26",
   "schema_version": "1.0.1",
-  "dataset_version": "0.1.1",
+  "dataset_version": "0.1.2",
   "language": [
     "en",
     "zh-Hant"
@@ -29,5 +29,5 @@
   "maintainer": "KageRyo",
   "repository": "https://github.com/KageRyo/TWDisaster",
   "rights_summary": "Original documentation, schema definitions, and dataset selection and arrangement: CC BY 4.0. Factual records require attribution to their original government publishers and remain subject to source-level website reuse statements; no original source payloads are included. See DATA_LICENSE.md and data/sources.csv.",
-  "coverage_note": "Positive-only, rights-screened response observations; not a complete Taiwan disaster or action inventory."
+  "coverage_note": "Coverage reflects the included source material and is not an exhaustive catalogue of disaster events or response activities in Taiwan."
 }
