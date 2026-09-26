@@ -1,10 +1,12 @@
 # TWDisaster 臺灣歷史災害資料集
 
-[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE) [![資料集檢查](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml)
 
 首版提供一組經整理、由臺灣官方公開來源支持的歷史災害應變觀察紀錄。資料集目前涵蓋 2001 至 2025 年間的 76 起天氣相關災害事件，收錄疏散、收容作業、道路狀況、應變活動、救援及資源部署等觀察。
 
 資料集的涵蓋範圍與細節取決於所收錄來源提供的內容，適合作為可再利用的歷史紀錄；不應視為所有災害事件或應變活動的完整目錄。
+
+資料集變更會由 CI 使用 [ReleaseGuard](https://github.com/KageRyo/ReleaseGuard) 驗證；ReleaseGuard 僅供開發流程使用，使用資料集不需要安裝它。
 
 ## 檔案
 
