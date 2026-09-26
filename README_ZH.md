@@ -1,20 +1,22 @@
 # TWDisaster 臺灣歷史災害資料集
 
-TWDisaster 是獨立、採用 UTF-8 CSV 的臺灣歷史天氣災害與有來源支持之應變事實資料集。0.1.1 版包含 **76 個事件、395 筆觀察、88 個來源及 89 筆事件—來源關聯**；來源所載的事件期間涵蓋 2001-06-22 至 2025-08-11。下載後即可用試算表或任何支援 CSV 的工具使用，不必安裝本專案的軟體。
+[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE)
 
-首版收錄官方公開來源中的應變事實，屬於只記錄有證據的正向資料，並非臺灣所有災害或應變行動的完整清單。沒有觀察列不表示行動未發生。資料集不包含預報、建議、優先順序、候選排序、訓練標籤，也沒有將史料硬配到 20 公尺格網。
+首版提供一組經整理、由臺灣官方公開來源支持的歷史災害應變觀察紀錄。資料集目前涵蓋 2001 至 2025 年間的 76 起天氣相關災害事件，收錄疏散、收容作業、道路狀況、應變活動、救援及資源部署等觀察。
+
+資料集的涵蓋範圍與細節取決於所收錄來源提供的內容，適合作為可再利用的歷史紀錄；不應視為所有災害事件或應變活動的完整目錄。
 
 ## 檔案
 
 | 路徑 | 內容 |
 | --- | --- |
-| `data/events.csv` | 穩定事件識別碼及來源所載日期範圍 |
-| `data/observations.csv` | 應變事實、時間、地點、來源與原文定位 |
-| `data/sources.csv` | 出版機關、原始網址、取得時間、完整性及權利依據 |
-| `data/event_sources.csv` | 明確的事件—來源關聯 |
+| [`data/events.csv`](data/events.csv) | 穩定事件識別碼及來源所載日期範圍 |
+| [`data/observations.csv`](data/observations.csv) | 應變事實、時間、地點、來源與原文定位 |
+| [`data/sources.csv`](data/sources.csv) | 出版機關、原始網址、取得時間、完整性及權利依據 |
+| [`data/event_sources.csv`](data/event_sources.csv) | 明確的事件—來源關聯 |
 | `schema/*.schema.json` | 四份 CSV 的列資料 JSON Schema |
 | `metadata/dataset.json` | 範圍、筆數及版本 |
-| `metadata/manifest.json`、`metadata/checksums.sha256` | 正式資料檔筆數與 SHA-256 |
+| [`metadata/manifest.json`](metadata/manifest.json)、[`metadata/checksums.sha256`](metadata/checksums.sha256) | 正式資料檔筆數與 SHA-256 |
 
 用 UTF-8 及第一列欄名讀取 CSV。試算表可直接開啟；R 可使用 `read.csv("data/events.csv", fileEncoding = "UTF-8")`，Python 標準函式庫的 `csv.DictReader` 也能讀取，皆不需安裝本專案套件。欄名以 `_json` 結尾的儲存格包含一般 JSON 陣列或物件。觀察表以 `event_id` 與 `source_id` 分別連到事件表與來源表；`event_sources.csv` 列出所有不重複的事件—來源關聯。
 

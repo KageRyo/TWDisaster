@@ -1,20 +1,22 @@
 # TWDisaster
 
-TWDisaster is a standalone, UTF-8 CSV dataset of historical weather-related disaster events and source-supported response observations in Taiwan. Version 0.1.1 contains **76 events, 395 observations, 88 sources, and 89 event-source links** covering source-reported windows from 2001-06-22 to 2025-08-11. It can be opened in a spreadsheet or imported into any tool that reads CSV; no project software is needed.
+[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE)
 
-The initial release is a curated, positive-only collection of response facts from official public sources. It is **not** a complete inventory of Taiwan disasters or response actions. A missing observation means no included source-supported row, not that an action did not occur. The dataset contains no forecasts, recommendations, priorities, candidate rankings, training labels, or 20 m grid assignments.
+The initial release provides a curated set of source-supported historical disaster response observations from official public sources in Taiwan. The dataset currently covers 76 weather-related disaster events from 2001 to 2025 and includes observations of evacuation, shelter operations, road conditions, emergency response activities, rescue, and resource deployment.
+
+The dataset reflects the coverage and granularity of the included source material and is intended as a reusable historical record rather than an exhaustive catalogue of disaster events or response activities.
 
 ## Files
 
 | Path | Contents |
 | --- | --- |
-| `data/events.csv` | Stable event identities and source-reported date windows |
-| `data/observations.csv` | Factual response observations with time, area, source, and locator |
-| `data/sources.csv` | Publisher, original URL, retrieval time, integrity, and rights basis |
-| `data/event_sources.csv` | Explicit event-source relationships |
+| [`data/events.csv`](data/events.csv) | Stable event identities and source-reported date windows |
+| [`data/observations.csv`](data/observations.csv) | Factual response observations with time, area, source, and locator |
+| [`data/sources.csv`](data/sources.csv) | Publisher, original URL, retrieval time, integrity, and rights basis |
+| [`data/event_sources.csv`](data/event_sources.csv) | Explicit event-source relationships |
 | `schema/*.schema.json` | JSON Schemas for rows read from the four CSV files |
 | `metadata/dataset.json` | Dataset description, scope, counts, and versions |
-| `metadata/manifest.json` and `metadata/checksums.sha256` | Canonical artifact counts and SHA-256 hashes |
+| [`metadata/manifest.json`](metadata/manifest.json) and [`metadata/checksums.sha256`](metadata/checksums.sha256) | Canonical artifact counts and SHA-256 hashes |
 
 Read CSV files as UTF-8 with a header row. A spreadsheet can open each file directly; R can use `read.csv("data/events.csv", fileEncoding = "UTF-8")`, and Python's standard `csv.DictReader` can read it without installing a package. Cells ending in `_json` contain ordinary JSON arrays or objects. Join `observations.event_id` to `events.event_id`, `observations.source_id` to `sources.source_id`, and use `event_sources.csv` for all distinct event-source links.
 
