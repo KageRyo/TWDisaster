@@ -1,0 +1,59 @@
+{
+  "manifest_version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "schema_version": "1.0.0",
+  "hash_algorithm": "SHA-256",
+  "hash_scope": "exact UTF-8 file bytes",
+  "artifacts": [
+    {
+      "path": "data/events.csv",
+      "sha256": "d800d76ccb4f181f1b94ff4ace92e57f14120c50281e68b909385501097951c8",
+      "bytes": 13686,
+      "row_count": 76
+    },
+    {
+      "path": "data/observations.csv",
+      "sha256": "2b01cf7189d76302e6b9503e2521e3b4bc7fff8540d1dc5637d0576112852e4b",
+      "bytes": 195042,
+      "row_count": 395
+    },
+    {
+      "path": "data/sources.csv",
+      "sha256": "4fb416d86119f664567b34ff84c44fd7f4197402cff263bf16f93e01260dfcc9",
+      "bytes": 47713,
+      "row_count": 88
+    },
+    {
+      "path": "data/event_sources.csv",
+      "sha256": "bc7636439c77d4a341568f154d7ae6dd09e8e4517bbbc3d418f6311e9f7c6c80",
+      "bytes": 3681,
+      "row_count": 89
+    },
+    {
+      "path": "schema/events.schema.json",
+      "sha256": "d4df67dbf337a6e6f783339754e47e7f156025fe53245e513d86b9c081876746",
+      "bytes": 2467
+    },
+    {
+      "path": "schema/observations.schema.json",
+      "sha256": "b8729b8a603c0b46400ab59b7031b8bba527325c6f68eda4fcdb97d5649e83db",
+      "bytes": 5574
+    },
+    {
+      "path": "schema/sources.schema.json",
+      "sha256": "a7b9821346dbb711ebe375f8636efafd6d47e170aafc547229909320dc969b67",
+      "bytes": 2695
+    },
+    {
+      "path": "schema/event_sources.schema.json",
+      "sha256": "904fb28ef524d97c7e931e1a69c2a007fb2a8cec963cfb7581ab6d1c22977128",
+      "bytes": 1230
+    },
+    {
+      "path": "metadata/dataset.json",
+      "sha256": "55dc03f7f0729013a561fb6eb1565ddb013f2ae0a898f5a06c6be10a8c9f2335",
+      "bytes": 1364
+    }
+  ],
+  "notes": "The manifest and checksum file are not self-hashed. Source snapshot hashes in sources.csv describe upstream captures, not these canonical files."
+}

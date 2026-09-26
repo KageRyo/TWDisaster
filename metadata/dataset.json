@@ -1,0 +1,27 @@
+{
+  "name": "TWDisaster",
+  "title": "Taiwan Historical Disaster Dataset",
+  "description": "Source-supported historical weather-related disaster events and factual response observations in Taiwan.",
+  "geographic_scope": "Taiwan; native source area precision retained, no released geometry",
+  "temporal_scope": {
+    "earliest_reported_event_date": "2001-06-22",
+    "latest_reported_event_date": "2025-08-11",
+    "meaning": "Compiled source-reported event windows, not exact meteorological onset or cessation"
+  },
+  "counts": {
+    "events": 76,
+    "observations": 395,
+    "sources": 88,
+    "event_source_relationships": 89,
+    "sources_without_snapshot_sha256": 11
+  },
+  "last_dataset_update": "2026-09-26",
+  "schema_version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "language": ["en", "zh-Hant"],
+  "data_language": ["zh-Hant", "en"],
+  "maintainer": "KageRyo",
+  "repository": "https://github.com/KageRyo/TWDisaster",
+  "rights_summary": "Original documentation and schema definitions: CC BY 4.0. Factual records require attribution to their original government publishers and remain subject to source-level website reuse statements; no original source payloads are included. See DATA_LICENSE.md and data/sources.csv.",
+  "coverage_note": "Positive-only, rights-screened response observations; not a complete Taiwan disaster or action inventory."
+}
