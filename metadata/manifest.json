@@ -1,6 +1,6 @@
 {
   "manifest_version": "1.0.0",
-  "dataset_version": "0.1.2",
+  "dataset_version": "0.1.3",
   "schema_version": "1.0.1",
   "hash_algorithm": "SHA-256",
   "hash_scope": "exact UTF-8 file bytes",
@@ -51,7 +51,7 @@
     },
     {
       "path": "metadata/dataset.json",
-      "sha256": "0ae67c577348e2cdbbb576191f01d997b031d91e7f21a3ebf2551f2b07223348",
+      "sha256": "53cf68a8fcec54e97f3f106261d500bdba7dbf103b6724936697057b720efdc8",
       "bytes": 1453
     }
   ],
