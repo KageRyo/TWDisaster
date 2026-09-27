@@ -1,0 +1,963 @@
+# TWDisaster v0.1.2 provenance for data tables and release metadata.
+# Source availability is unknown because this manifest does not fetch remote URLs.
+# Historical source snapshot SHA-256 values stay in data/sources.csv; none are declared as local snapshots here.
+# Edges describe artifact-level derivation; CSV files retain the finer event/source links.
+# The four JSON schemas are project-authored roots and have no declared upstream source.
+version: 1
+sources:
+  TWD-S0001:
+    status: unknown
+    locator: "https://cdprc.ey.gov.tw/File/5DFAB95F990C34B4"
+    version: "weekly-report-20171018-v1"
+    retrieved_at: "2026-09-05T00:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0002:
+    status: unknown
+    locator: "https://ebook.nfa.gov.tw/whitepaper/102/files/basic-html/page192.html"
+    version: "official-whitepaper-page192-v1"
+    retrieved_at: "2026-09-08T00:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0003:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?n=OTDmoYPoip3porHpoqjmh4nororloLHlkYoucGRm&u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvMzk1MjAvMzczNTdmZWEtMGMxZi00NDFiLTkyMGItNzE4MWVkODBlZmEwLnBkZg%3D%3D"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-05T13:55:53+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0004:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?n=OTDntI3ojonporHpoqjmh4nororloLHlkYoucGRm&u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvMzk1MTgvYTU2ZmZhYzAtNjUxZC00NTVmLWIzMWEtZjZhYmIzN2YwOTgwLnBkZg%3D%3D"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-05T14:26:32+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0005:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?n=OTMg5rW36aas6aKx6aKoLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvMzk1NTAvYmFmMDY2OGMtMjIxYi00ZDIwLWJkM2QtZmEzZWJhNGJjYjM3LnBkZg%3D%3D"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-06T09:26:53+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0006:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?n=OTPmlY%2FnnaPliKnporHpoqjmh4nororloLHlkYoucGRm&u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvMzk1MTcvMTMyMDI4ZjYtNWVkMC00NWJiLWI4YTktMDdlZWMzYTUyYzFiLnBkZg%3D%3D"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-05T00:46:16+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0007:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?n=OTPoib7liKnporHpoqjmh4nororloLHlkYoucGRm&u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvMzk1MTYvOTY4YzU0NTItMTBlNS00YWU4LTg3YzMtODhmM2ZjYzkxY2QyLnBkZg%3D%3D"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-05T17:05:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0008:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?n=OTTmtbfmo6DporHpoqjmh4nororloLHlkYoucGRm&u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvMzk1MzYvNDkyZGVkZmEtNzY0ZS00YTBmLThkMWQtYzNlYmRiNzc2M2YwLnBkZg%3D%3D"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-05T17:05:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0009:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?n=OTfolpTonJzporHpoqjmh4nororloLHlkYoucGRm&u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvMzk1MzQvYjlmMjBjMDMtNDQ3YS00ZTM1LWI4YTktOGNlZTAyMzYxOWM4LnBkZg%3D%3D"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-05T19:50:35+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0010:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?n=OTlyZXBvcnRDSDMucGRm&u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI2NDQvNDA3LzFjYzMxYjRiLTc3MjEtNDQ2ZS05NDc0LWY4OTgxNjg1YWQ5OS5wZGY%3D"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-07T03:02:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0011:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?n=OTlyZXBvcnRDSDMucGRm&u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI2NDQvNDA3LzFjYzMxYjRiLTc3MjEtNDQ2ZS05NDc0LWY4OTgxNjg1YWQ5OS5wZGY%3D"
+    version: "official-annual-report-ch3-v1"
+    retrieved_at: "2026-09-05T10:16:57+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0012:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvMzk1MTUvMzYxMjdhMzUtMDI0Zi00NDQ2LWIyZDUtMDNiMWFlOGFjYTIzLnBkZg%3d%3d&n=OTPntI3lnabporHpoqjmh4nororloLHlkYoucGRm"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-05T18:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0013:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvMzk1NTEvNDA5MjkxZWMtYjQ4MS00NzJhLTg2MWItMGM5NTQ3ZWIxZjdmLnBkZg%3d%3d&n=OTDmva3nvo7porHpoqjmh4nororloLHlkYoucGRm"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-05T16:23:04+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0014:
+    status: unknown
+    locator: "https://web-ws.wra.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNDQ5L3JlbGZpbGUvMTI4NDEvNTQwODMvN2MwYjY3MWYtMzg4Ni00MjEyLWJjZTEtYWYwNGI3MDE2ZGJjLnBkZg%3d%3d&n=MTEz5bm0MTAyOeW6t%2biKrumisemiqOaHieiuiuW3peS9nOWft%2bihjOWgseWRii5wZGY%3d"
+    version: "official-pdf-v1"
+    retrieved_at: "2026-08-11T23:11:28+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0015:
+    status: unknown
+    locator: "https://web.wra.gov.tw/ferc/News_Content.aspx?_CSN=586&n=7993&s=39558"
+    version: "official-event-report-v1"
+    retrieved_at: "2026-09-07T02:37:44+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0016:
+    status: unknown
+    locator: "https://web.wra.gov.tw/ferc/News_Content.aspx?n=7993&s=39556&sms=12842"
+    version: "official-event-report-v1"
+    retrieved_at: "2026-09-07T02:37:44+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0017:
+    status: unknown
+    locator: "https://web.wra.gov.tw/ferc/News_Content.aspx?n=7993&s=39557"
+    version: "official-event-page-v1"
+    retrieved_at: "2026-09-05T13:16:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0018:
+    status: unknown
+    locator: "https://web.wra.gov.tw/ferc/News_Content.aspx?n=7993&s=39561"
+    version: "official-event-page-v1"
+    retrieved_at: "2026-09-05T13:19:34+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0019:
+    status: unknown
+    locator: "https://web.wra.gov.tw/ferc/cp.aspx?n=7936"
+    version: "official-response-report-v1"
+    retrieved_at: "2026-09-07T02:37:44+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0020:
+    status: unknown
+    locator: "https://web.wra.gov.tw/wralib/WraLib/wSite/books_60832"
+    version: "official-library-summary-v1"
+    retrieved_at: "2026-09-05T18:30:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0021:
+    status: unknown
+    locator: "https://ws.thb.gov.tw/001/Upload/OldFile/resource/Menus/Menu09/main0903/main0903-3/274.pdf"
+    version: "official-bulletin-v1"
+    retrieved_at: "2026-09-05T15:17:08+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0022:
+    status: unknown
+    locator: "https://ws.thb.gov.tw/001/Upload/OldFile/resource/Menus/Menu09/main0903/main0903-3/277.pdf"
+    version: "official-bulletin-277-v1"
+    retrieved_at: "2026-09-05T15:50:17+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0023:
+    status: unknown
+    locator: "https://ws.thb.gov.tw/001/Upload/OldFile/resource/Menus/Menu09/main0903/main0903-3/280.pdf"
+    version: "official-bulletin-280-v1"
+    retrieved_at: "2026-09-05T15:50:17+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0024:
+    status: unknown
+    locator: "https://ws.thb.gov.tw/Download.ashx?icon=.pdf&n=5YWs6Lev5bGAMTEy5bm05aCxLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDM3L3JlbGZpbGUvMTIyODYvMjY4LzQwMjhkMTcxLTJhYzktNGJjMC04YTBmLTUzYjczY2QzOWI1Yy5wZGY%3D"
+    version: "official-pdf-v1"
+    retrieved_at: "2026-08-11T22:30:49+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0025:
+    status: unknown
+    locator: "https://www-ws.wra.gov.tw/001/Upload/433/relfile/9995/14542/872bc495-395c-4329-b345-f1b11975af3c.pdf"
+    version: "official-reservoir-operation-v1"
+    retrieved_at: "2026-09-06T08:10:41+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0026:
+    status: unknown
+    locator: "https://www-ws.wra.gov.tw/Download.ashx?n=MDk2MTDmn6%2FnvoXojo7porHpoqjmt6HmsLTmsrPmtKrmsLTloLHlkYoucGRm&u=LzAwMS9VcGxvYWQvNDIzL3JlbGZpbGUvMC8zMzYxOS85ZGNiMGEyMS1hMDA3LTQ5YWItYmFmOC02ZmQ0NDk5NTYyN2UucGRm"
+    version: "official-flood-report-v1"
+    retrieved_at: "2026-09-06T00:56:31+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0027:
+    status: unknown
+    locator: "https://www.ey.gov.tw/Page/4EC2394BE4EE9DD0/12a24f7a-11d7-4427-b14e-8f4c90879161"
+    version: "official-cabinet-resolution-v1"
+    retrieved_at: "2026-09-07T00:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0028:
+    status: unknown
+    locator: "https://www.ey.gov.tw/Page/4EC2394BE4EE9DD0/15ba3ac7-95c5-41d1-a384-cdd0b7dd5e18"
+    version: "official-cabinet-resolution-v1"
+    retrieved_at: "2026-09-07T00:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0029:
+    status: unknown
+    locator: "https://www.ey.gov.tw/Page/4EC2394BE4EE9DD0/32473636-5229-4618-928b-48b6b604275b"
+    version: "official-cabinet-resolution-v1"
+    retrieved_at: "2026-09-07T00:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0030:
+    status: unknown
+    locator: "https://www.ey.gov.tw/Page/4EC2394BE4EE9DD0/5149dae7-9c19-4e23-8399-4cdd17fd626e"
+    version: "official-cabinet-resolution-v1"
+    retrieved_at: "2026-09-06T10:10:04+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0031:
+    status: unknown
+    locator: "https://www.ey.gov.tw/Page/4EC2394BE4EE9DD0/d9066bcb-b574-45e7-b519-4cf8d5a0b789"
+    version: "official-cabinet-resolution-v1"
+    retrieved_at: "2026-09-06T01:25:18+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0032:
+    status: unknown
+    locator: "https://www.ey.gov.tw/Page/4EC2394BE4EE9DD0/d907c023-1ed3-4af7-bd80-8b78135fb713"
+    version: "official-cabinet-resolution-v1"
+    retrieved_at: "2026-09-07T00:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0033:
+    status: unknown
+    locator: "https://www.ey.gov.tw/Page/85695CF8981C15BD/6e4e97a7-0e73-4d1c-825f-3052c152ec77"
+    version: "official-video-news-v1"
+    retrieved_at: "2026-09-07T00:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0034:
+    status: unknown
+    locator: "https://www.ey.gov.tw/Page/9277F759E41CCD91/632802a3-2f50-4ecf-a4a3-c26e288b1884"
+    version: "official-response-briefing-v1"
+    retrieved_at: "2026-09-08T19:59:47+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0035:
+    status: unknown
+    locator: "https://www.ey.gov.tw/Page/9277F759E41CCD91/9b9a0f32-1770-418d-be2f-106e3b86cebc"
+    version: "official-page-v1"
+    retrieved_at: "2026-09-05T19:13:42+08:00"
+    rights: "website_open_statement; basis_url=https://www.ey.gov.tw/Page/2EADDBFEDDB6357E; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0036:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/2c62b174ddce83c8d99bd5c1fe48c322.pdf"
+    version: "central-eoc-report-20120616-v1"
+    retrieved_at: "2026-09-04T23:49:20+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0037:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/30dcafce8b375cd9a810ca666fd60795.pdf"
+    version: "report-4-v1"
+    retrieved_at: "2026-09-05T05:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0038:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/39ded8fb32cb1c12a941ed76db5feab9.pdf"
+    version: "report-3-v1"
+    retrieved_at: "2026-09-05T02:01:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0039:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/3dafa02208ecba8e8ad49b58cead8a5b.pdf"
+    version: "report-3-v1"
+    retrieved_at: "2026-09-05T02:35:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0040:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/517db23c216e09427f58e972a0d20915.pdf"
+    version: "central-eoc-report-20120612-2130-v1"
+    retrieved_at: "2026-09-08T05:10:14+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0041:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/8289ef3db597a552e976f3d70e48b1a6.pdf"
+    version: "report-2-v1"
+    retrieved_at: "2026-09-05T01:27:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0042:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/96cc8fea40c3102eede2dbd2df2f4fa0.pdf"
+    retrieved_at: "2026-09-05T05:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0043:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/ad888625983c0e5fb5d7d68529b618f9.pdf"
+    version: "report-2017-0613-v1"
+    retrieved_at: "2026-09-05T03:19:58+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0044:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/b2a21dfe92595945234fb25a48131163.pdf"
+    version: "report-5-v1"
+    retrieved_at: "2026-09-05T03:45:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0045:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/b912a2e8f1225dbce511b0a41da4f122.pdf"
+    version: "report-3-v1"
+    retrieved_at: "2026-09-05T02:35:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0046:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/ca8ac2f33f2dc1ef9d0a8a8398b1f1b1.pdf"
+    version: "report-3-v1"
+    retrieved_at: "2026-09-05T03:45:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0047:
+    status: unknown
+    locator: "https://www.nfa.gov.tw/upload/cht/attachment/e0e3995de1820ab4ccb794e50e99513a.pdf"
+    version: "report-2-v1"
+    retrieved_at: "2026-09-05T03:45:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.nfa.gov.tw/eng/index.php?code=list&ids=634; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0048:
+    status: unknown
+    locator: "https://www.thb.gov.tw/FileResource.axd?path=html%2Fdoc%2F%E5%87%BA%E7%89%88%E5%93%81-%E5%8F%B0%E7%81%A3%E5%85%AC%E8%B7%AF%E5%B7%A5%E7%A8%8B%2F%E7%AC%AC40%E5%8D%B7%E7%AC%AC12%E6%9C%9F.pdf"
+    version: "official-journal-v1"
+    retrieved_at: "2026-09-08T22:50:34+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0049:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content.aspx?n=87&s=250940&sms=13235"
+    version: "official-notice-v1"
+    retrieved_at: "2026-08-11T19:30:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0050:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content.aspx?n=87&s=49505"
+    version: "official-bulletin-snapshot-v1"
+    retrieved_at: "2026-09-08T01:26:09+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0051:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content.aspx?n=87&s=57313&sms=13235"
+    version: "official-notices-v1"
+    retrieved_at: "2026-09-06T07:26:30+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0052:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=12181&s=226269&sms=14672"
+    version: "official-notice-v1"
+    retrieved_at: "2026-09-06T13:04:30+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0053:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=12181&s=227396"
+    version: "official-report-7-v1"
+    retrieved_at: "2026-09-06T12:06:21+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0054:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=12181&s=230180"
+    version: "official-report-2-v1"
+    retrieved_at: "2026-09-06T12:35:08+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0055:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=12181&s=275308&sms=14672"
+    version: "official-report-1-v1"
+    retrieved_at: "2026-09-06T13:35:46+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0056:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=12181&s=275707&sms=14672"
+    version: "official-notice-v1"
+    retrieved_at: "2026-09-06T13:35:46+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0057:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=12181&s=276367&sms=14672"
+    version: "official-report-0731-v1"
+    retrieved_at: "2026-09-06T13:35:46+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0058:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=195745&sms=13235"
+    version: "official-report-3-v1"
+    retrieved_at: "2026-09-06T14:14:51+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0059:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=224008"
+    version: "official-report-8-v1"
+    retrieved_at: "2026-09-06T11:29:41+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0060:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=256945"
+    version: "official-report-1100-v1"
+    retrieved_at: "2026-09-06T12:06:21+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0061:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=40401"
+    version: "official-notice-v1"
+    retrieved_at: "2026-09-07T03:02:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0062:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=42704"
+    version: "official-notice-v1"
+    retrieved_at: "2026-09-07T03:02:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0063:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=43173"
+    version: "official-notice-v1"
+    retrieved_at: "2026-08-11T20:30:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0064:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=43582"
+    version: "official-notice-v1"
+    retrieved_at: "2026-09-04T20:06:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0065:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=43690"
+    version: "official-notice-v1"
+    retrieved_at: "2026-08-11T18:55:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0066:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=43737"
+    version: "official-notice-snapshot-v1"
+    retrieved_at: "2026-09-07T16:30:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0067:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=44089"
+    version: "official-notice-snapshot-v1"
+    retrieved_at: "2026-09-07T19:54:13+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0068:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=45937"
+    retrieved_at: "2026-09-06T08:53:31+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0069:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=46157"
+    version: "official-notice-v1"
+    retrieved_at: "2026-08-11T19:45:30+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0070:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=46622"
+    version: "official-notice-snapshot-v1"
+    retrieved_at: "2026-09-08T00:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0071:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=48967&sms=13235"
+    version: "official-notice-v1"
+    retrieved_at: "2026-08-11T19:15:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0072:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=52087"
+    version: "official-notice-v1"
+    retrieved_at: "2026-08-11T00:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0073:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=52842"
+    version: "official-notice-v1"
+    retrieved_at: "2026-08-11T22:04:26+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0074:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=57231"
+    version: "official-notice-v1"
+    retrieved_at: "2026-09-07T03:02:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0075:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=57769"
+    version: "report-4-v1"
+    retrieved_at: "2026-08-11T18:52:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0076:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=57968"
+    version: "official-notice-v1"
+    retrieved_at: "2026-09-07T03:02:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0077:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=59738"
+    version: "official-notice-v1"
+    retrieved_at: "2026-09-07T02:07:54+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0078:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=59868&sms=13235"
+    version: "official-report-aug8-v1"
+    retrieved_at: "2026-09-07T02:07:54+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0079:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=59980"
+    version: "official-report-v1"
+    retrieved_at: "2026-09-07T02:07:54+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0080:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=60151"
+    version: "official-report-1-v1"
+    retrieved_at: "2026-09-06T14:14:51+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0081:
+    status: unknown
+    locator: "https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=61082"
+    version: "official-notice-v1"
+    retrieved_at: "2026-09-07T02:37:44+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0082:
+    status: unknown
+    locator: "https://www.thb.gov.tw/resource/Menus/Menu09/main0903/main0903-3/274.pdf"
+    version: "official-bulletin-v1"
+    retrieved_at: "2026-09-04T20:12:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.thb.gov.tw/cp.aspx?n=439; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0083:
+    status: unknown
+    locator: "https://www.wra.gov.tw/NewsAll_Content.aspx?n=6272&s=60942"
+    retrieved_at: "2026-09-06T07:26:30+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0084:
+    status: unknown
+    locator: "https://www.wra.gov.tw/News_Content.aspx?n=6438&s=221335"
+    version: "official-news-v1"
+    retrieved_at: "2026-08-11T23:14:35+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0085:
+    status: unknown
+    locator: "https://www.wra.gov.tw/News_Content_Table.aspx?n=5037&s=13418"
+    version: "official-event-page-v1"
+    retrieved_at: "2026-09-07T17:22:35+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0086:
+    status: unknown
+    locator: "https://www.wra.gov.tw/News_Content_Table.aspx?n=5037&s=13621"
+    version: "official-event-page-v1"
+    retrieved_at: "2026-09-07T20:00:00+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0087:
+    status: unknown
+    locator: "https://www.wra.gov.tw/News_Content_Table.aspx?n=5037&s=13870"
+    version: "official-event-page-v1"
+    retrieved_at: "2026-09-06T00:00:14+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+  TWD-S0088:
+    status: unknown
+    locator: "https://www.wra.gov.tw/News_Content_Table.aspx?n=5037&s=14091"
+    version: "official-event-page-v1"
+    retrieved_at: "2026-09-06T00:28:12+08:00"
+    rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
+artifacts:
+  checksums-v0-1-2:
+    path: metadata/checksums.sha256
+    sha256: 7fe0d2d4b9642e759826f10dff0d66ed53819578cd9960becf420620d31a1ab8
+    size_bytes: 812
+    version: "0.1.2"
+  dataset-metadata-v0-1-2:
+    path: metadata/dataset.json
+    sha256: 0ae67c577348e2cdbbb576191f01d997b031d91e7f21a3ebf2551f2b07223348
+    size_bytes: 1453
+    version: "0.1.2"
+  event-sources-schema-v1-0-1:
+    path: schema/event_sources.schema.json
+    sha256: 904fb28ef524d97c7e931e1a69c2a007fb2a8cec963cfb7581ab6d1c22977128
+    size_bytes: 1230
+    version: "1.0.1"
+  event-sources-v0-1-2:
+    path: data/event_sources.csv
+    sha256: bc7636439c77d4a341568f154d7ae6dd09e8e4517bbbc3d418f6311e9f7c6c80
+    size_bytes: 3681
+    version: "0.1.2"
+  events-schema-v1-0-1:
+    path: schema/events.schema.json
+    sha256: d4df67dbf337a6e6f783339754e47e7f156025fe53245e513d86b9c081876746
+    size_bytes: 2467
+    version: "1.0.1"
+  events-v0-1-2:
+    path: data/events.csv
+    sha256: d800d76ccb4f181f1b94ff4ace92e57f14120c50281e68b909385501097951c8
+    size_bytes: 13686
+    version: "0.1.2"
+  observations-schema-v1-0-1:
+    path: schema/observations.schema.json
+    sha256: af87475e254345aa64e7d0c90a671c18b48a65ee41d53170f4f1bbd0e0df1ee8
+    size_bytes: 10537
+    version: "1.0.1"
+  observations-v0-1-2:
+    path: data/observations.csv
+    sha256: 88b5fe43389cf999176bdf57cfe58a48a0d6c6f14ed65389a93f3d1ad08cb6bb
+    size_bytes: 194787
+    version: "0.1.2"
+  release-manifest-v1-0-0:
+    path: metadata/manifest.json
+    sha256: 9841708f87476fdae6ff087d532e6f2f36d1f88921e8ba3787dddc04f97e1617
+    size_bytes: 1868
+    version: "1.0.0"
+  sources-schema-v1-0-1:
+    path: schema/sources.schema.json
+    sha256: a7b9821346dbb711ebe375f8636efafd6d47e170aafc547229909320dc969b67
+    size_bytes: 2695
+    version: "1.0.1"
+  sources-v0-1-2:
+    path: data/sources.csv
+    sha256: 4fb416d86119f664567b34ff84c44fd7f4197402cff263bf16f93e01260dfcc9
+    size_bytes: 47713
+    version: "0.1.2"
+lineage:
+  - {from: dataset-metadata-v0-1-2, to: checksums-v0-1-2, type: derived_from}
+  - {from: event-sources-schema-v1-0-1, to: checksums-v0-1-2, type: derived_from}
+  - {from: event-sources-v0-1-2, to: checksums-v0-1-2, type: derived_from}
+  - {from: events-schema-v1-0-1, to: checksums-v0-1-2, type: derived_from}
+  - {from: events-v0-1-2, to: checksums-v0-1-2, type: derived_from}
+  - {from: observations-schema-v1-0-1, to: checksums-v0-1-2, type: derived_from}
+  - {from: observations-v0-1-2, to: checksums-v0-1-2, type: derived_from}
+  - {from: sources-schema-v1-0-1, to: checksums-v0-1-2, type: derived_from}
+  - {from: sources-v0-1-2, to: checksums-v0-1-2, type: derived_from}
+  - {from: event-sources-v0-1-2, to: dataset-metadata-v0-1-2, type: derived_from}
+  - {from: events-v0-1-2, to: dataset-metadata-v0-1-2, type: derived_from}
+  - {from: observations-v0-1-2, to: dataset-metadata-v0-1-2, type: derived_from}
+  - {from: sources-v0-1-2, to: dataset-metadata-v0-1-2, type: derived_from}
+  - {from: TWD-S0001, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0002, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0003, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0004, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0005, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0006, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0007, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0008, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0009, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0010, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0011, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0012, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0013, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0014, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0015, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0016, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0017, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0018, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0019, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0020, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0021, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0022, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0023, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0024, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0025, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0026, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0027, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0028, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0029, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0030, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0031, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0032, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0033, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0034, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0035, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0036, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0037, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0038, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0039, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0040, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0041, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0042, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0043, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0044, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0045, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0046, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0047, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0048, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0049, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0050, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0051, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0052, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0053, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0054, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0055, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0056, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0057, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0058, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0059, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0060, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0061, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0062, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0063, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0064, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0065, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0066, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0067, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0068, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0069, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0070, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0071, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0072, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0073, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0074, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0075, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0076, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0077, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0078, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0079, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0080, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0081, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0082, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0083, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0084, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0085, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0086, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0087, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0088, to: event-sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0001, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0002, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0003, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0004, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0005, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0006, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0007, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0008, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0009, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0010, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0011, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0012, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0013, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0014, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0015, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0016, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0017, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0018, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0019, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0020, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0021, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0022, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0023, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0024, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0025, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0026, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0027, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0028, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0029, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0030, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0031, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0032, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0033, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0034, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0035, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0036, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0037, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0038, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0039, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0040, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0041, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0042, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0043, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0044, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0045, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0046, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0047, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0048, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0049, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0050, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0051, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0052, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0053, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0054, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0055, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0056, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0057, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0058, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0059, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0060, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0061, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0062, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0063, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0064, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0065, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0066, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0067, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0068, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0069, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0070, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0071, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0072, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0073, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0074, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0075, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0076, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0077, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0078, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0079, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0080, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0081, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0082, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0083, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0084, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0085, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0086, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0087, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0088, to: events-v0-1-2, type: derived_from}
+  - {from: TWD-S0001, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0002, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0003, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0004, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0005, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0006, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0007, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0008, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0009, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0010, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0011, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0012, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0013, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0014, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0015, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0016, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0017, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0018, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0019, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0020, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0021, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0022, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0023, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0024, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0025, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0026, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0027, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0028, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0029, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0030, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0031, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0032, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0033, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0034, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0035, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0036, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0037, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0038, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0039, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0040, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0041, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0042, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0043, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0044, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0045, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0046, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0047, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0048, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0049, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0050, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0051, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0052, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0053, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0054, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0055, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0056, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0057, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0058, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0059, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0060, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0061, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0062, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0063, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0064, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0065, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0066, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0067, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0068, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0069, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0070, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0071, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0072, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0073, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0074, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0075, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0076, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0077, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0078, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0079, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0080, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0081, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0082, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0083, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0084, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0085, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0086, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0087, to: observations-v0-1-2, type: derived_from}
+  - {from: TWD-S0088, to: observations-v0-1-2, type: derived_from}
+  - {from: dataset-metadata-v0-1-2, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: event-sources-schema-v1-0-1, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: event-sources-v0-1-2, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: events-schema-v1-0-1, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: events-v0-1-2, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: observations-schema-v1-0-1, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: observations-v0-1-2, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: sources-schema-v1-0-1, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: sources-v0-1-2, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: TWD-S0001, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0002, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0003, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0004, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0005, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0006, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0007, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0008, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0009, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0010, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0011, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0012, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0013, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0014, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0015, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0016, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0017, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0018, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0019, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0020, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0021, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0022, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0023, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0024, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0025, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0026, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0027, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0028, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0029, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0030, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0031, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0032, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0033, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0034, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0035, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0036, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0037, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0038, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0039, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0040, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0041, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0042, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0043, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0044, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0045, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0046, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0047, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0048, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0049, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0050, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0051, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0052, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0053, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0054, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0055, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0056, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0057, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0058, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0059, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0060, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0061, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0062, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0063, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0064, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0065, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0066, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0067, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0068, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0069, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0070, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0071, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0072, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0073, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0074, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0075, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0076, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0077, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0078, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0079, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0080, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0081, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0082, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0083, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0084, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0085, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0086, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0087, to: sources-v0-1-2, type: derived_from}
+  - {from: TWD-S0088, to: sources-v0-1-2, type: derived_from}
