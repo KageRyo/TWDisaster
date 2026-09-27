@@ -1,4 +1,4 @@
-# TWDisaster v0.1.2 provenance for data tables and release metadata.
+# TWDisaster v0.1.3 provenance for data tables and release metadata.
 # Source availability is unknown because this manifest does not fetch remote URLs.
 # Historical source snapshot SHA-256 values stay in data/sources.csv; none are declared as local snapshots here.
 # Edges describe artifact-level derivation; CSV files retain the finer event/source links.
@@ -531,16 +531,16 @@ sources:
     retrieved_at: "2026-09-06T00:28:12+08:00"
     rights: "website_open_statement; basis_url=https://www.wra.gov.tw/wra02/cp.aspx?n=9884; Attribution required. Only normalized, non-PII factual records are included; original documents are not redistributed."
 artifacts:
-  checksums-v0-1-2:
+  checksums-v0-1-3:
     path: metadata/checksums.sha256
-    sha256: 7fe0d2d4b9642e759826f10dff0d66ed53819578cd9960becf420620d31a1ab8
+    sha256: 6914c762e0f4159b3f7d9ecc00ff7ef9eab8bd17a55e29fcd8aad954a279b1ea
     size_bytes: 812
-    version: "0.1.2"
-  dataset-metadata-v0-1-2:
+    version: "0.1.3"
+  dataset-metadata-v0-1-3:
     path: metadata/dataset.json
-    sha256: 0ae67c577348e2cdbbb576191f01d997b031d91e7f21a3ebf2551f2b07223348
+    sha256: 53cf68a8fcec54e97f3f106261d500bdba7dbf103b6724936697057b720efdc8
     size_bytes: 1453
-    version: "0.1.2"
+    version: "0.1.3"
   event-sources-schema-v1-0-1:
     path: schema/event_sources.schema.json
     sha256: 904fb28ef524d97c7e931e1a69c2a007fb2a8cec963cfb7581ab6d1c22977128
@@ -573,7 +573,7 @@ artifacts:
     version: "0.1.2"
   release-manifest-v1-0-0:
     path: metadata/manifest.json
-    sha256: 9841708f87476fdae6ff087d532e6f2f36d1f88921e8ba3787dddc04f97e1617
+    sha256: c95af424a3ffe680fb4e68ee0355df841edf5ee939fe2e5e3db1df2f09160eca
     size_bytes: 1868
     version: "1.0.0"
   sources-schema-v1-0-1:
@@ -587,19 +587,19 @@ artifacts:
     size_bytes: 47713
     version: "0.1.2"
 lineage:
-  - {from: dataset-metadata-v0-1-2, to: checksums-v0-1-2, type: derived_from}
-  - {from: event-sources-schema-v1-0-1, to: checksums-v0-1-2, type: derived_from}
-  - {from: event-sources-v0-1-2, to: checksums-v0-1-2, type: derived_from}
-  - {from: events-schema-v1-0-1, to: checksums-v0-1-2, type: derived_from}
-  - {from: events-v0-1-2, to: checksums-v0-1-2, type: derived_from}
-  - {from: observations-schema-v1-0-1, to: checksums-v0-1-2, type: derived_from}
-  - {from: observations-v0-1-2, to: checksums-v0-1-2, type: derived_from}
-  - {from: sources-schema-v1-0-1, to: checksums-v0-1-2, type: derived_from}
-  - {from: sources-v0-1-2, to: checksums-v0-1-2, type: derived_from}
-  - {from: event-sources-v0-1-2, to: dataset-metadata-v0-1-2, type: derived_from}
-  - {from: events-v0-1-2, to: dataset-metadata-v0-1-2, type: derived_from}
-  - {from: observations-v0-1-2, to: dataset-metadata-v0-1-2, type: derived_from}
-  - {from: sources-v0-1-2, to: dataset-metadata-v0-1-2, type: derived_from}
+  - {from: dataset-metadata-v0-1-3, to: checksums-v0-1-3, type: derived_from}
+  - {from: event-sources-schema-v1-0-1, to: checksums-v0-1-3, type: derived_from}
+  - {from: event-sources-v0-1-2, to: checksums-v0-1-3, type: derived_from}
+  - {from: events-schema-v1-0-1, to: checksums-v0-1-3, type: derived_from}
+  - {from: events-v0-1-2, to: checksums-v0-1-3, type: derived_from}
+  - {from: observations-schema-v1-0-1, to: checksums-v0-1-3, type: derived_from}
+  - {from: observations-v0-1-2, to: checksums-v0-1-3, type: derived_from}
+  - {from: sources-schema-v1-0-1, to: checksums-v0-1-3, type: derived_from}
+  - {from: sources-v0-1-2, to: checksums-v0-1-3, type: derived_from}
+  - {from: event-sources-v0-1-2, to: dataset-metadata-v0-1-3, type: derived_from}
+  - {from: events-v0-1-2, to: dataset-metadata-v0-1-3, type: derived_from}
+  - {from: observations-v0-1-2, to: dataset-metadata-v0-1-3, type: derived_from}
+  - {from: sources-v0-1-2, to: dataset-metadata-v0-1-3, type: derived_from}
   - {from: TWD-S0001, to: event-sources-v0-1-2, type: derived_from}
   - {from: TWD-S0002, to: event-sources-v0-1-2, type: derived_from}
   - {from: TWD-S0003, to: event-sources-v0-1-2, type: derived_from}
@@ -864,7 +864,7 @@ lineage:
   - {from: TWD-S0086, to: observations-v0-1-2, type: derived_from}
   - {from: TWD-S0087, to: observations-v0-1-2, type: derived_from}
   - {from: TWD-S0088, to: observations-v0-1-2, type: derived_from}
-  - {from: dataset-metadata-v0-1-2, to: release-manifest-v1-0-0, type: derived_from}
+  - {from: dataset-metadata-v0-1-3, to: release-manifest-v1-0-0, type: derived_from}
   - {from: event-sources-schema-v1-0-1, to: release-manifest-v1-0-0, type: derived_from}
   - {from: event-sources-v0-1-2, to: release-manifest-v1-0-0, type: derived_from}
   - {from: events-schema-v1-0-1, to: release-manifest-v1-0-0, type: derived_from}
