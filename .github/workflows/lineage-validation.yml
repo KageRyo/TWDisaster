@@ -2,15 +2,17 @@ name: LineageGuard
 
 on:
   pull_request:
-    paths:
-      - "lineage.yaml"
-      - ".github/workflows/lineage-validation.yml"
+    branches:
+      - main
 
   push:
     branches:
       - main
     paths:
       - "lineage.yaml"
+      - "data/**"
+      - "schema/**"
+      - "metadata/**"
       - ".github/workflows/lineage-validation.yml"
 
   workflow_dispatch:
@@ -44,7 +46,9 @@ jobs:
           chmod +x "${RUNNER_TEMP}/lineageguard-linux-x86_64"
 
       - name: Validate lineage manifest
-        run: "${RUNNER_TEMP}/lineageguard-linux-x86_64" validate .
+        run: |
+          "${RUNNER_TEMP}/lineageguard-linux-x86_64" validate .
 
       - name: Verify local artifact hashes
-        run: "${RUNNER_TEMP}/lineageguard-linux-x86_64" verify .
+        run: |
+          "${RUNNER_TEMP}/lineageguard-linux-x86_64" verify .
