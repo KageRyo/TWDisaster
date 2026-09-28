@@ -1,10 +1,10 @@
 # TWDisaster
 
-[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE) [![Dataset gate](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml)
+[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE) [![Dataset gate](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml) 
 
 The initial release provides a curated set of source-supported historical disaster response observations from official public sources in Taiwan. The dataset currently covers 76 weather-related disaster events from 2001 to 2025 and includes observations of evacuation, shelter operations, road conditions, emergency response activities, rescue, and resource deployment.
 
-The dataset reflects the coverage and granularity of the included source material and is intended as a reusable historical record rather than an exhaustive catalogue of disaster events or response activities.
+The dataset reflects the coverage and granularity of the included source material and is intended as a reusable historical record rather than an exhaustive catalogue of disaster events or response activities. [[正體中文]](README_ZH.md)
 
 ## Files
 
