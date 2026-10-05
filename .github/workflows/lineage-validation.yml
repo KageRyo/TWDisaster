@@ -8,12 +8,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "lineage.yaml"
-      - "data/**"
-      - "schema/**"
-      - "metadata/**"
-      - ".github/workflows/lineage-validation.yml"
 
   workflow_dispatch:
 
@@ -27,28 +21,9 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Download and verify LineageGuard v0.1.0
-        run: |
-          set -eu
-          release_url="https://github.com/KageRyo/LineageGuard/releases/download/v0.1.0"
-          curl --fail --location --silent --show-error \
-            "${release_url}/lineageguard-linux-x86_64" \
-            --output "${RUNNER_TEMP}/lineageguard-linux-x86_64"
-          curl --fail --location --silent --show-error \
-            "${release_url}/SHA256SUMS" \
-            --output "${RUNNER_TEMP}/SHA256SUMS"
-          (
-            cd "${RUNNER_TEMP}"
-            sha256sum --check --strict SHA256SUMS
-          )
-          chmod +x "${RUNNER_TEMP}/lineageguard-linux-x86_64"
-
-      - name: Validate lineage manifest
-        run: |
-          "${RUNNER_TEMP}/lineageguard-linux-x86_64" validate .
-
-      - name: Verify local artifact hashes
-        run: |
-          "${RUNNER_TEMP}/lineageguard-linux-x86_64" verify .
+      - name: Validate provenance and verify local artifact hashes
+        uses: KageRyo/LineageGuard@e48f12825fdfbcab8c3d0345fd3de8149b2423c3 # v0.3.0
+        with:
+          path: .
