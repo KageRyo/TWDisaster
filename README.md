@@ -29,3 +29,7 @@ See [data model](docs/data-model.md), [methodology](docs/methodology.md), [prove
 The original repository prose, schema definitions, and dataset selection and arrangement use the [CC BY 4.0 license](LICENSE). Individual source-backed facts and source materials remain subject to the rights described in [DATA_LICENSE.md](DATA_LICENSE.md), each `sources.csv` row, and the linked official reuse declarations. Attribute the original publisher when using a source-backed row. This license does not replace upstream rights or grant rights to absent PDFs, HTML archives, images, or logos.
 
 Cite this release using [CITATION.cff](CITATION.cff), and cite the corresponding original publisher and URL for specific observations.
+
+## Maintenance
+
+See [maintenance conventions](docs/maintenance.md) for dependency updates, required CI, Action pinning and release validation.
