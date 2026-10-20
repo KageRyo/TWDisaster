@@ -24,6 +24,6 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Validate dataset
-        uses: KageRyo/ReleaseGuard@c0daf596d170dc7cdff545f9975c9b99a57aecbc # v0.2.1
+        uses: KageRyo/ReleaseGuard@42224938427fb31a7ce522e8e859eb7bc6fee516 # v0.2.2
         with:
           path: .
