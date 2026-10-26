@@ -1,6 +1,6 @@
 # TWDisaster
 
-[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE) [![Dataset gate](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml) [![LineageGuard](https://github.com/KageRyo/TWDisaster/actions/workflows/lineage-validation.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/lineage-validation.yml) 
+[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE) [![Dataset gate](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml) [![LineageGuard](https://github.com/KageRyo/TWDisaster/actions/workflows/lineage-validation.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/lineage-validation.yml) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23657821.svg)](https://doi.org/10.5281/zenodo.23657821) 
 
 TWDisaster provides a curated set of source-supported historical disaster response observations from official public sources in Taiwan. The dataset currently covers 76 weather-related disaster events from 2001 to 2025 and includes observations of evacuation, shelter operations, road conditions, emergency response activities, rescue, and resource deployment.
 
@@ -28,7 +28,7 @@ See [data model](docs/data-model.md), [methodology](docs/methodology.md), [prove
 
 The original repository prose, schema definitions, and dataset selection and arrangement use the [CC BY 4.0 license](LICENSE). Individual source-backed facts and source materials remain subject to the rights described in [DATA_LICENSE.md](DATA_LICENSE.md), each `sources.csv` row, and the linked official reuse declarations. Attribute the original publisher when using a source-backed row. This license does not replace upstream rights or grant rights to absent PDFs, HTML archives, images, or logos.
 
-Cite this release using [CITATION.cff](CITATION.cff), and cite the corresponding original publisher and URL for specific observations.
+Cite this dataset using [CITATION.cff](CITATION.cff) (DOI [10.5281/zenodo.23657821](https://doi.org/10.5281/zenodo.23657821) always resolves to the latest version), and cite the corresponding original publisher and URL for specific observations.
 
 ## Maintenance
 

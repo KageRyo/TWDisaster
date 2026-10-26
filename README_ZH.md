@@ -1,6 +1,6 @@
 # TWDisaster 臺灣歷史災害資料集
 
-[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE) [![資料集檢查](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml) [![LineageGuard](https://github.com/KageRyo/TWDisaster/actions/workflows/lineage-validation.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/lineage-validation.yml)
+[![Latest release](https://img.shields.io/github/v/release/KageRyo/TWDisaster?style=flat-square)](https://github.com/KageRyo/TWDisaster/releases/latest) [![License](https://img.shields.io/github/license/KageRyo/TWDisaster?style=flat-square)](LICENSE) [![資料集檢查](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/dataset-gate.yml) [![LineageGuard](https://github.com/KageRyo/TWDisaster/actions/workflows/lineage-validation.yml/badge.svg?branch=main)](https://github.com/KageRyo/TWDisaster/actions/workflows/lineage-validation.yml) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23657821.svg)](https://doi.org/10.5281/zenodo.23657821)
 
 本資料集提供一組經整理、由臺灣官方公開來源支持的歷史災害應變觀察紀錄。資料集目前涵蓋 2001 至 2025 年間的 76 起天氣相關災害事件，收錄疏散、收容作業、道路狀況、應變活動、救援及資源部署等觀察。
 
