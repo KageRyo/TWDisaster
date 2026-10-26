@@ -3,6 +3,7 @@ message: "Please cite TWDisaster and the original publisher for specific observa
 title: "TWDisaster: Taiwan Historical Disaster Dataset"
 abstract: "Source-supported historical weather-related disaster events (2001-2025) and factual response observations in Taiwan, with per-source provenance and rights basis."
 license: CC-BY-4.0
+doi: 10.5281/zenodo.23657821
 type: dataset
 version: 0.1.4
 date-released: 2026-10-26
