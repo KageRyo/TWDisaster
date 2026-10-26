@@ -4,8 +4,8 @@ title: "TWDisaster: Taiwan Historical Disaster Dataset"
 abstract: "Source-supported historical weather-related disaster events (2001-2025) and factual response observations in Taiwan, with per-source provenance and rights basis."
 license: CC-BY-4.0
 type: dataset
-version: 0.1.3
-date-released: 2026-09-28
+version: 0.1.4
+date-released: 2026-10-26
 authors:
   - family-names: Chang
     given-names: Chien-Hsun
