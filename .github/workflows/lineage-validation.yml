@@ -24,6 +24,6 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Validate provenance and verify local artifact hashes
-        uses: KageRyo/LineageGuard@e48f12825fdfbcab8c3d0345fd3de8149b2423c3 # v0.3.0
+        uses: KageRyo/LineageGuard@573e52458cf4328f751cb5c8334007b73d2375b9 # v0.3.1
         with:
           path: .
