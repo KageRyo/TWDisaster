@@ -4,7 +4,7 @@
 
 TWDisaster provides a curated set of source-supported historical disaster response observations from official public sources in Taiwan. The dataset currently covers 76 weather-related disaster events from 2001 to 2025 and includes observations of evacuation, shelter operations, road conditions, emergency response activities, rescue, and resource deployment.
 
-The dataset reflects the coverage and granularity of the included source material and is intended as a reusable historical record rather than an exhaustive catalogue of disaster events or response activities. [[正體中文]](README_ZH.md)
+The dataset includes only events and response activities documented in the included official sources, so its coverage and granularity follow those sources. It is intended as a reusable historical record. [[正體中文]](README_ZH.md)
 
 ## Files
 
